@@ -8,3 +8,18 @@
 		<script type="text/javascript" src="js/scripts.js"></script>
 	</head>
 	<body>
+		<nav>
+			<ul>
+				<li>JF</li>
+				<li><a href="#top">Top</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="http://blog.jordanforeman.com">Blog</a></li>
+			</ul>
+		</nav>
+		
+		<header id="top">			
+			<h1><a href="http://jordanforeman.com">Jordan Foreman</a></h1>
+			<h2><a href="#">Web Developer</a> - <a href="#">Graphic Designer</a> - <a href="#">Code Junkie</a></h2>
+		</header>

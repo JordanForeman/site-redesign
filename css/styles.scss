@@ -1,6 +1,91 @@
 @import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster');
+
+$pink : #D3649F;
+$blue : #107da3;
+$gray : #ababab;
 
 body
 {
-	background-color: #dcca8a;
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	color: $blue;
+	text-shadow: 0 1px 0 #FFF;
+	background-image: url('http://subtlepatterns.com/patterns/subtlenet2.png');
+}
+
+a
+{
+	color: lighten($blue, 20);
+	text-decoration: none;
+	-webkit-transition: color .5s ease;
+	
+	&:hover
+	{
+		color: $blue;
+	}
+}
+
+#top
+{ 
+	text-align: center;
+	padding-top: 40px;
+
+	h1 a
+	{
+		font-family: "Lobster", Helvetica, Arial, sans-serif;
+		font-size: 3em;
+		text-shadow: 0 2px 0 lighten($blue, 20);
+		color: lighten($pink, 20);
+		-webkit-transition-property: color, text-shadow;
+		-webkit-transition-duration: .5s;
+		-webkit-transition-timing-function: ease;
+		text-decoration: none;
+		
+		&:hover
+		{
+			color: $pink;
+		}
+	}
+}
+
+nav
+{
+	position: fixed;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(#e1e1e1 0%, #ffffff 100%);
+	padding: 5px;
+	width: 100%;
+	box-shadow: 0 0 3px $gray;
+	text-align: center;
+		
+	ul
+	{
+		margin: 0 auto;
+		li
+		{
+			float: left;
+			padding: 5px;
+			
+			&:first-child
+			{
+				padding-right: 10px;
+				margin-right: 5px;
+				border-right: 1px solid $gray;
+			}
+			
+			a
+			{
+				text-decoration: none;
+				color: $gray;
+				text-shadow: 0 1px 0 #FFF;
+				-webkit-transition: color .5s ease;
+				
+				&:hover
+				{
+					color: $pink;
+				}
+			}
+		}
+	}
 }

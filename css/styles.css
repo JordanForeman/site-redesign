@@ -1,3 +1,55 @@
 @import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lobster');
 body {
-  background-color: #dcca8a; }
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #107da3;
+  text-shadow: 0 1px 0 #FFF;
+  background-image: url("http://subtlepatterns.com/patterns/subtlenet2.png"); }
+
+a {
+  color: #2ebaeb;
+  text-decoration: none;
+  -webkit-transition: color .5s ease; }
+  a:hover {
+    color: #107da3; }
+
+#top {
+  text-align: center;
+  padding-top: 40px; }
+  #top h1 a {
+    font-family: "Lobster", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    text-shadow: 0 2px 0 #2ebaeb;
+    color: #eab3d0;
+    -webkit-transition-property: color, text-shadow;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+    text-decoration: none; }
+    #top h1 a:hover {
+      color: #d3649f; }
+
+nav {
+  position: fixed;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(#e1e1e1 0%, white 100%);
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 0 3px #ababab;
+  text-align: center; }
+  nav ul {
+    margin: 0 auto; }
+    nav ul li {
+      float: left;
+      padding: 5px; }
+      nav ul li:first-child {
+        padding-right: 10px;
+        margin-right: 5px;
+        border-right: 1px solid #ababab; }
+      nav ul li a {
+        text-decoration: none;
+        color: #ababab;
+        text-shadow: 0 1px 0 #FFF;
+        -webkit-transition: color .5s ease; }
+        nav ul li a:hover {
+          color: #d3649f; }
