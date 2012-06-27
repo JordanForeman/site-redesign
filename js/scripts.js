@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function slideShow(){
 	nextSlide();
-	window.setTimeout(nextSlide, 5000);
+	window.setTimeout(slideShow, 5000);
 }
 
 function nextSlide(){
