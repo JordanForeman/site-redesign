@@ -26,6 +26,26 @@ a
 	}
 }
 
+hr
+{
+	display: block;
+	margin: 5px auto;
+	height: 1px;
+	width: 80%;
+	min-width: 300px;
+	box-shadow: 0 1px 5px #7d7d7d;
+}
+
+section
+{
+	margin: 25px auto;
+}
+
+h2
+{
+	
+}
+
 #top
 { 
 	text-align: center;
@@ -54,6 +74,7 @@ a
 nav
 {
 	position: fixed;
+	z-index: 9999;
 	background-color: #FFF;
 	background-image: -webkit-linear-gradient(#e1e1e1 0%, #ffffff 100%);
 	padding: 5px;
@@ -95,12 +116,13 @@ nav
 #work-slider
 {
 	display: block;
-	margin: 25px auto;
+	margin: 0 auto;
 	height: 300px;
 	width: 600px;
 	max-width: 90%;
 	overflow: hidden;
 	position: relative;
+	box-shadow: 0 0 15px #ccc;
 	
 	button
 	{
@@ -115,7 +137,7 @@ nav
 		padding: 10px 20px;
 		cursor: pointer;
 		
-		border-radius: 50px;
+		border-radius: 50%;
 		opacity: .5;
 		
 		&[onclick="nextSlide()"]{
@@ -145,6 +167,7 @@ nav
 	ul li
 	{
 		display: none;
+		overflow: hidden;
 		
 		&.active
 		{

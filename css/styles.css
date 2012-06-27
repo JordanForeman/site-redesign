@@ -14,6 +14,17 @@ a {
   a:hover {
     color: #107da3; }
 
+hr {
+  display: block;
+  margin: 5px auto;
+  height: 1px;
+  width: 80%;
+  min-width: 300px;
+  box-shadow: 0 1px 5px #7d7d7d; }
+
+section {
+  margin: 25px auto; }
+
 #top {
   text-align: center;
   padding-top: 40px; }
@@ -33,6 +44,7 @@ a {
 
 nav {
   position: fixed;
+  z-index: 9999;
   background-color: #FFF;
   background-image: -webkit-linear-gradient(#e1e1e1 0%, white 100%);
   padding: 5px;
@@ -58,12 +70,13 @@ nav {
 
 #work-slider {
   display: block;
-  margin: 25px auto;
+  margin: 0 auto;
   height: 300px;
   width: 600px;
   max-width: 90%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 0 15px #ccc; }
   #work-slider button {
     z-index: 5;
     position: absolute;
@@ -75,7 +88,7 @@ nav {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 50%;
     opacity: .5; }
     #work-slider button[onclick="nextSlide()"] {
       right: -45px;
@@ -88,7 +101,8 @@ nav {
       #work-slider button[onclick="prevSlide()"]:hover {
         left: -30px; }
   #work-slider ul li {
-    display: none; }
+    display: none;
+    overflow: hidden; }
     #work-slider ul li.active {
       display: block; }
     #work-slider ul li img {

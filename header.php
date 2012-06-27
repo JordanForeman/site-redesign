@@ -21,5 +21,7 @@
 		
 		<header id="top">			
 			<h1><a href="http://jordanforeman.com">Jordan Foreman</a></h1>
-			<h2><a href="#">Web Developer</a> - <a href="#">Graphic Designer</a> - <a href="http://github.com/jordanforeman">Code Junkie</a></h2>
+			<h2><a href="#">Web Designer</a> - <a href="#">Software Developer</a> - <a href="http://github.com/jordanforeman">Code Junkie</a></h2>
 		</header>
+		
+		<hr />
