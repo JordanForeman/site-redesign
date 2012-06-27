@@ -19,8 +19,8 @@ a {
   padding-top: 40px; }
   #top h1 a {
     font-family: "Lobster", Helvetica, Arial, sans-serif;
-    font-size: 3em;
     text-shadow: 0 2px 0 #2ebaeb;
+    font-size: 4em;
     color: #eab3d0;
     -webkit-transition-property: color, text-shadow;
     -webkit-transition-duration: .5s;
@@ -28,6 +28,8 @@ a {
     text-decoration: none; }
     #top h1 a:hover {
       color: #d3649f; }
+  #top a {
+    font-size: 1.2em; }
 
 nav {
   position: fixed;
@@ -53,3 +55,69 @@ nav {
         -webkit-transition: color .5s ease; }
         nav ul li a:hover {
           color: #d3649f; }
+
+#work-slider {
+  display: block;
+  margin: 25px auto;
+  height: 300px;
+  width: 600px;
+  max-width: 90%;
+  overflow: hidden;
+  position: relative; }
+  #work-slider button {
+    z-index: 5;
+    position: absolute;
+    top: 35%;
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: .5; }
+    #work-slider button[onclick="nextSlide()"] {
+      right: -45px;
+      -webkit-transition: right .4s ease; }
+      #work-slider button[onclick="nextSlide()"]:hover {
+        right: -30px; }
+    #work-slider button[onclick="prevSlide()"] {
+      left: -45px;
+      -webkit-transition: left .4s ease; }
+      #work-slider button[onclick="prevSlide()"]:hover {
+        left: -30px; }
+  #work-slider ul li {
+    display: none; }
+    #work-slider ul li.active {
+      display: block; }
+    #work-slider ul li img {
+      opacity: .5;
+      -webkit-transition: opacity .5s ease;
+      position: absolute; }
+      #work-slider ul li img:hover {
+        opacity: .8; }
+    #work-slider ul li .rollover {
+      display: block;
+      width: 100%;
+      position: absolute;
+      font-size: .9em;
+      text-shadow: none;
+      left: 0px;
+      bottom: 0px;
+      color: #FFF;
+      background-color: #000;
+      opacity: .7; }
+      #work-slider ul li .rollover h4 {
+        font-weight: 600;
+        padding: 0px 5px;
+        margin-top: 8px;
+        margin-bottom: 0px; }
+        #work-slider ul li .rollover h4 a {
+          -webkit-transition: color .5s ease; }
+          #work-slider ul li .rollover h4 a:hover {
+            color: #d3649f; }
+      #work-slider ul li .rollover p {
+        padding: 0px 5px;
+        margin-top: 0px;
+        margin-bottom: 5px; }

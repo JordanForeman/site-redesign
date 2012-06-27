@@ -30,12 +30,12 @@ a
 { 
 	text-align: center;
 	padding-top: 40px;
-
+	
 	h1 a
 	{
 		font-family: "Lobster", Helvetica, Arial, sans-serif;
-		font-size: 3em;
 		text-shadow: 0 2px 0 lighten($blue, 20);
+		font-size: 4em;
 		color: lighten($pink, 20);
 		-webkit-transition-property: color, text-shadow;
 		-webkit-transition-duration: .5s;
@@ -47,6 +47,8 @@ a
 			color: $pink;
 		}
 	}
+	
+	a{font-size: 1.2em;}
 }
 
 nav
@@ -85,6 +87,118 @@ nav
 				{
 					color: $pink;
 				}
+			}
+		}
+	}
+}
+
+#work-slider
+{
+	display: block;
+	margin: 25px auto;
+	height: 300px;
+	width: 600px;
+	max-width: 90%;
+	overflow: hidden;
+	position: relative;
+	
+	button
+	{
+		z-index: 5;
+		position: absolute;
+		top: 35%;
+		font-size: 3em;
+		font-weight: bold;
+		color: #FFF;
+		background-color: #000;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		
+		border-radius: 50px;
+		opacity: .5;
+		
+		&[onclick="nextSlide()"]{
+			right: -45px;
+			
+			-webkit-transition: right .4s ease;
+			
+			&:hover
+			{
+				right: -30px;
+			}
+		}
+		
+		&[onclick="prevSlide()"]{
+			left: -45px;
+			
+			-webkit-transition: left .4s ease;
+			
+			&:hover
+			{
+				left: -30px;
+			}
+		}
+		
+	}
+	
+	ul li
+	{
+		display: none;
+		
+		&.active
+		{
+			display: block;
+		}
+		
+		img
+		{
+			opacity: .5;
+			-webkit-transition: opacity .5s ease;
+			position: absolute;
+			
+			&:hover
+			{
+				opacity: .8;
+			}
+		}
+		
+		.rollover
+		{
+			display: block;
+			width: 100%;
+			position: absolute;
+			font-size: .9em;
+			text-shadow: none;
+			left: 0px;
+			bottom: 0px;
+			color: #FFF;
+			background-color: #000;
+			opacity: .7;
+			
+			h4
+			{
+				font-weight: 600;
+			    padding: 0px 5px;
+			    margin-top: 8px;
+			    margin-bottom: 0px;
+			    
+			    a
+			    {
+			    	-webkit-transition: color .5s ease;
+			    	
+			    	&:hover
+			    	{
+				    	color: $pink;
+			    	}
+			    }
+			}
+			
+			p
+			{
+				padding: 0px 5px;
+			    margin-top: 0px;
+			    margin-bottom: 5px;
 			}
 		}
 	}
