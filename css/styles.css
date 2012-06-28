@@ -30,15 +30,15 @@ section {
   padding-top: 40px; }
   #top h1 a {
     font-family: "Lobster", Helvetica, Arial, sans-serif;
-    text-shadow: 0 2px 0 #2ebaeb;
     font-size: 4em;
-    color: #eab3d0;
+    color: rgba(21, 161, 209, 0.5);
+    text-shadow: 3px 3px 0 rgba(211, 100, 159, 0.5);
     -webkit-transition-property: color, text-shadow;
     -webkit-transition-duration: .5s;
     -webkit-transition-timing-function: ease;
     text-decoration: none; }
     #top h1 a:hover {
-      color: #d3649f; }
+      color: #2ebaeb; }
   #top a {
     font-size: 1.2em; }
 
