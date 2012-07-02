@@ -10,6 +10,9 @@ body
 	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	color: $blue;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 	text-shadow: 0 1px 0 #FFF;
 	background-image: url('http://subtlepatterns.com/patterns/subtlenet2.png');
 }
@@ -39,11 +42,48 @@ hr
 section
 {
 	margin: 25px auto;
+	
+	p
+	{
+		font-size: .9em;
+		margin: 10px;
+	}
+	
+	ul.skills
+	{
+		list-style-type: hebrew;
+		margin: 10px;
+		font-size: .85em;
+		
+		li
+		{
+			margin-left: 40px;		
+		}
+	}
+	
+	&:hover
+	{
+		h2
+		{
+			width: 98%;
+			color: $pink;
+			-webkit-transition: all 1s ease-in-out;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin-left: 5px;
+	margin-bottom: 5px;
 }
 
 h2
 {
-	
+	width: 50%;
+	border-bottom: 1px solid;
+	box-shadow: 0 2px 0 #CCC;
+	-webkit-transition: all 1s ease-in-out;
 }
 
 #top
@@ -59,7 +99,7 @@ h2
 		color: rgba(lighten($blue, 10), 0.5);
 		text-shadow: 3px 3px 0 rgba($pink, 0.5);
 		//color: lighten($pink, 20);
-		-webkit-transition-property: color, text-shadow;
+		-webkit-transition-property: all;
 		-webkit-transition-duration: .5s;
 		-webkit-transition-timing-function: ease;
 		text-decoration: none;
@@ -67,6 +107,7 @@ h2
 		&:hover
 		{
 			color: lighten($blue, 20);
+			-webkit-animation: shake .5s linear;
 		}
 	}
 	
@@ -201,10 +242,12 @@ nav
 			background-color: #000;
 			opacity: .7;
 			
+			-webkit-transition: opacity .5s ease;
+			
 			h4
 			{
 				font-weight: 600;
-			    padding: 0px 5px;
+			    padding: 0 3%;
 			    margin-top: 8px;
 			    margin-bottom: 0px;
 			    
@@ -221,10 +264,44 @@ nav
 			
 			p
 			{
-				padding: 0px 5px;
+				padding: 0 2%;
 			    margin-top: 0px;
 			    margin-bottom: 5px;
 			}
+			
+			&:hover
+			{
+				opacity: 1;
+			}
 		}
 	}
+}
+
+footer
+{
+	width: 100%;
+	background-color: #FFF;
+	padding: 2%;
+	border-top: 2px solid $pink;
+	-webkit-animation: footerBorder 3s infinite linear;
+}
+
+@-webkit-keyframes footerBorder {
+	0%{border-color: $pink}
+	33%{border-color: $blue}
+	66%{border-color: $pink}
+}
+
+@-webkit-keyframes shake {
+	0%{ margin-left: -20px; margin-right: 0px;}
+	10%{ margin-left: 0px; margin-right: -20px;}
+	20%{ margin-left: -20px; margin-right: 0px;}
+	30%{ margin-left: 0px; margin-right: -20px;}
+	40%{ margin-left: -20px; margin-right: 0px;}
+	50%{ margin-left: 0px; margin-right: -20px;}
+	60%{ margin-left: -20px; margin-right: 0px;}
+	70%{ margin-left: 0px; margin-right: -20px;}
+	80%{ margin-left: -20px; margin-right: 0px;}
+	90%{ margin-left: 0px; margin-right: -20px;}
+	100%{ margin: none;}
 }
